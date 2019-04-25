@@ -17,28 +17,33 @@ import static org.junit.Assert.*;
  * @author miguel
  */
 public class ExemploTest {
-    
+
     public ExemploTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
 
-     @Test
+    @Test
     public void hello() {
         assertEquals(true, Main.validar());
+    }
+
+    @Test
+    public void hello2() {
+        assertEquals(false, !Main.validar());
     }
 }
